@@ -28,6 +28,20 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -49,6 +63,7 @@ img {
 }
 
 .header {
+  border-bottom: 1px solid var(--cornflower);
   background-color: var(--white);
 }
 
@@ -61,6 +76,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-nav-list {
@@ -90,7 +106,6 @@ img {
 
 .header-nav-link {
   display: block;
-  margin: 24px 0;
   color: var(--navy-blue);
   font-weight: 500;
   font-size: 16px;
@@ -121,7 +136,7 @@ img {
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
   color: var(--white);
@@ -134,6 +149,7 @@ img {
 
 .hero-button {
   display: block;
+  min-width: 169px;
   margin: 0 auto;
   padding: 16px 32px;
   border: none;
@@ -154,7 +170,7 @@ img {
 }
 
 .specs {
-  padding: 120px 0 60px;
+  padding: 120px 0;
 }
 
 .specs-list {
@@ -184,7 +200,7 @@ img {
 }
 
 .wrwd {
-  padding: 60px 0;
+  padding-bottom: 120px;
 }
 
 .wrwd-title {
@@ -207,7 +223,7 @@ img {
 }
 
 .our-team {
-  padding: 60px 0 120px;
+  padding: 120px 0 120px;
   background-color: var(--cloud);
 }
 
@@ -236,7 +252,7 @@ img {
 }
 
 .team-member-descr {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .team-member-name {
@@ -329,13 +345,15 @@ img {
   letter-spacing: 0.02em;
 }
 
+/* ------------------------------ */
+
 .footer {
-  padding: 100px 156px;
+  padding: 100px 0;
   background-color: var(--navy-blue);
 }
 
 .footer .logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
