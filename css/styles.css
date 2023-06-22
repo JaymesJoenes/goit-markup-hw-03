@@ -286,6 +286,7 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .portfolio-btn {
@@ -304,6 +305,7 @@ img {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+  border: 1px solid transparent;
   background-color: var(--ocean);
   color: var(--white);
   cursor: pointer;
@@ -324,7 +326,7 @@ img {
 }
 
 .portfolio-card-content {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
   border: 1px solid var(--cornflower);
   border-top: none;
 }
