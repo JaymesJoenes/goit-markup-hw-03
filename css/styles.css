@@ -67,16 +67,16 @@ img {
   background-color: var(--white);
 }
 
-.header > div {
+.header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-nav-list {
@@ -283,10 +283,10 @@ img {
 }
 
 .portfolio-btn-list {
+  padding-bottom: 72px;
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .portfolio-btn {
@@ -315,8 +315,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  padding-top: 36px;
-  padding-bottom: 120px;
   column-gap: 24px;
 }
 
